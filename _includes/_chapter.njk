@@ -1,0 +1,28 @@
+<article>
+  <header class="entry-header">
+    <h1 class="entry-title"><a href="#" title="Introduction">{{ chapter.title }}</a></h1>
+  </header>
+
+  <div class="entry-content">
+    <div class="outline">
+      <h2>Chapter Outline</h2>
+      {{ chapter.outline | safe }}
+    </div>
+
+    <div class="intro-conc">
+      {% if chapter.introduction %}
+        <div class="introduction">
+          <h3>Introduction</h3>
+          {{ chapter.introduction | safe }}
+        </div>
+      {% endif %}
+
+      {% if chapter.conclusion %}
+        <div class="conclusion">
+          <h3>Conclusion</h3>
+          {{ chapter.conclusion | safe }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</article>

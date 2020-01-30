@@ -1,9 +1,12 @@
 .footer {
-  border-top: 1px solid #fff;
-  box-shadow: 0 -2px 0 -1px #7f7f7f;
-}
-
-.footer {
-  text-align: center;
+  margin-top: 2rem;
   padding: 2em 0;
+  border-top: 1px solid var(--highlight-color);
+  box-shadow: 0 -2px 0 -1px var(--shadow-color);
+  text-align: center;
+
+  @media (min-width: 45em) {
+    margin-top: 4rem;
+    padding: 4rem 0;
+  }
 }

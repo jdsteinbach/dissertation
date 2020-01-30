@@ -2,7 +2,7 @@
   margin-bottom: 2rem;
   text-align: center;
 
-  @media (min-width:45em) {
+  @media (min-width: 45em) {
     margin-bottom: 4rem;
   }
 }
@@ -17,7 +17,7 @@
     0 1px 0 var(--text-highlight),
     0 -1px 1px var(--text-shadow);
 
-  @media (min-width:45em) {
+  @media (min-width: 45em) {
     font-size: 3.75rem;
   }
 }
@@ -27,7 +27,7 @@
   font-family: var(--font-alt);
   font-size: 1.5rem;
 
-  @media screen and (min-width:45em) {
+  @media screen and (min-width: 45em) {
     font-size: 2.5rem;
   }
 }

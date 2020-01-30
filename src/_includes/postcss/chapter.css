@@ -1,5 +1,5 @@
 .chapter {
-  margin: 1rem auto;
+  margin: 2rem auto;
   max-width: 64rem;
   display: grid;
   grid-template:
@@ -30,8 +30,13 @@
     0 1px 0 var(--text-highlight),
     0 -1px 1px var(--text-shadow);
 
+  &::before {
+    content: "Chapter " counter(chapters) ": ";
+    counter-increment: chapters;
+  }
+
   @media (min-width: 45em) {
-    margin: 1rem 0;
+    margin-top: 1rem;
     font-size: 2.5rem;
   }
 }
@@ -61,7 +66,7 @@
 
     > ol {
       padding-right: 2rem;
-      border-right: 1px solid #7f7f7f;
+      border-right: 1px solid var(--shadow-color);
     }
   }
 }
@@ -76,7 +81,7 @@
 
 .chapter__heading,
 .chapter__subheading {
-  margin: 0 0 1em;
+  margin: .5em 0 .5em;
   font-family: var(--font-alt);
   font-size: 1.25rem;
   font-weight: 400;

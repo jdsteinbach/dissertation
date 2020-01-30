@@ -32,10 +32,13 @@ h6 {
 }
 
 p {
-  margin-top: 1.5em;
   font-size: 1rem;
 
-  @media screen and (min-width:45em) {
+  & + & {
+    margin-top: 1em;
+  }
+
+  @media screen and (min-width: 45em) {
     font-size: 1.25rem;
   }
 }
@@ -61,6 +64,7 @@ strong {
 }
 
 .main {
-  border-top: 1px solid #fff;
-  box-shadow: 0 -2px 0 -1px var(--text-color);
+  counter-reset: chapters;
+  border-top: 1px solid var(--highlight-color);
+  box-shadow: 0 -2px 0 -1px var(--shadow-color);
 }

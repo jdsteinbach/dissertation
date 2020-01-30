@@ -3,8 +3,8 @@
   --text-color: #4e4e4e;
   --link-color: #6b6b6b;
   --title-color: #6b6b6b;
-  --text-shadow: rgba(0, 0, 0, .4);
-  --text-highlight: #fff;
+  --shadow-color: rgba(0, 0, 0, .4);
+  --highlight-color: #fff;
   --font-body: Palatino Linotype, Palatino, serif;
   --font-heading: trajan-pro-3, Palatino Linotype, Palatino, serif;
   --font-alt: angie-sans, Palatino Linotype, Palatino, serif;

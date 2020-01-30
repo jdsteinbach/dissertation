@@ -21,6 +21,12 @@ module.exports = class {
     return await postcss([
       require('postcss-partial-import'),
       require('postcss-nested'),
+      require('postcss-image-inliner')({
+        assetPaths: [
+          path.join(__dirname, `../_includes/img`)
+        ],
+        maxFileSize: 0
+      }),
       require('autoprefixer'),
       require('cssnano')
     ])

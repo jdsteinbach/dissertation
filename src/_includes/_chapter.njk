@@ -1,0 +1,22 @@
+<article class="chapter">
+  <h3 class="chapter__title"><a href="#">{{ loop.index }}. {{ chapter.title }}</a></h3>
+
+  <div class="chapter__outline">
+    <h3 class="chapter__heading">Chapter Outline</h3>
+    {{ chapter.outline | safe }}
+  </div>
+
+  {% if chapter.introduction %}
+    <div class="chapter__introduction">
+      <h3 class="chapter__subheading">Introduction</h3>
+      {{ chapter.introduction | safe }}
+    </div>
+  {% endif %}
+
+  {% if chapter.conclusion %}
+    <div class="chapter__conclusion">
+      <h3 class="chapter__subheading">Conclusion</h3>
+      {{ chapter.conclusion | safe }}
+    </div>
+  {% endif %}
+</article>

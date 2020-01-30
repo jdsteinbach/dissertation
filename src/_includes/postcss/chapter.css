@@ -1,0 +1,70 @@
+.chapter {
+  margin: 1rem auto;
+  padding: 0 1rem;
+  max-width: 64rem;
+  display: grid;
+  grid-template:
+      "title       " auto
+      "outline     " auto
+      "introduction" auto
+      "conclusion  " auto /
+       1fr;
+  gap: 1rem;
+
+  @media (min-width: 45em) {
+    grid-template:
+      "title   title       " auto
+      "outline introduction" auto
+      "outline conclusion  " auto /
+       1fr     1.6fr;
+    gap: 1rem 2rem;
+  }
+}
+
+.chapter__title {
+  grid-area: title;
+}
+
+.chapter__outline {
+  grid-area: outline;
+  font-size: 1rem;
+
+  ol {
+    list-style: upper-roman inside;
+    margin-left: 0;
+    padding-left: 0;
+
+    ol {
+      list-style: upper-alpha inside;
+      margin-left: 1.33em;
+      font-weight: 400;
+      padding: .3em 0 1em;
+
+      ol {
+        list-style: decimal;
+        margin-left: 2.67em;
+        padding: 0;
+      }
+    }
+  }
+
+  @media (min-width: 45em) {
+    > ol {
+      padding-right: 2rem;
+      border-right: 1px solid #7f7f7f;
+    }
+  }
+}
+
+.chapter__introduction {
+  grid-area: introduction;
+}
+
+.chapter__conclusion {
+  grid-area: conclusion;
+}
+
+.chapter__heading,
+.chapter__subheading {
+  font-weight: 600;
+}

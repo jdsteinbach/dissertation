@@ -17,8 +17,13 @@
     "url": "https://github.com/jdsteinbach/dissertation/issues"
   },
   "homepage": "https://github.com/jdsteinbach/dissertation#readme",
-  "devDependencies": {
+  "dependencies": {
     "@11ty/eleventy": "^0.10.0",
-    "markdown-it": "^10.0.0"
+    "autoprefixer": "^9.7.4",
+    "cssnano": "^4.1.10",
+    "markdown-it": "^10.0.0",
+    "postcss": "^7.0.26",
+    "postcss-nested": "^4.2.1",
+    "postcss-partial-import": "^4.1.0"
   }
 }

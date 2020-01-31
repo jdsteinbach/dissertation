@@ -1,5 +1,5 @@
 module.exports = eleventyConfig => {
-    /* Markdown */
+    // Markdown
     let markdownIt = require('markdown-it')
 
     eleventyConfig.setLibrary('md', markdownIt({
@@ -8,6 +8,9 @@ module.exports = eleventyConfig => {
       linkify: true,
       typographer: true
     }))
+
+    // Netlify Redirect
+    eleventyConfig.addPassthroughCopy('_redirects')
 
     return {
       templateFormats: [

@@ -112,5 +112,8 @@ dist
 *.sass.map
 *.scss.map
 
+# Build Dir
+_site
+
 # Local reference only
 .specs

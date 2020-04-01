@@ -25,7 +25,7 @@
   grid-area: title;
   font-family: var(--font-heading);
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 700;
   text-shadow:
     0 1px 0 var(--text-highlight),
     0 -1px 1px var(--text-shadow);
@@ -82,11 +82,12 @@
 .chapter__heading,
 .chapter__subheading {
   margin: .5em 0 .5em;
-  font-family: var(--font-alt);
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .075em;
 
   @media (min-width: 45em) {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
 }

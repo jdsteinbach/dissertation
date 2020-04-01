@@ -11,7 +11,7 @@
   margin: 2rem 0 0;
   font-family: var(--font-heading);
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--title-color);
   text-shadow:
     0 1px 0 var(--text-highlight),
@@ -24,7 +24,6 @@
 
 .header__description {
   margin: 1em 0 0;
-  font-family: var(--font-alt);
   font-size: 1.5rem;
 
   @media screen and (min-width: 45em) {

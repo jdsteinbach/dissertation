@@ -1,29 +1,29 @@
 module.exports = eleventyConfig => {
-    // Markdown
-    let markdownIt = require('markdown-it')
+  // Markdown
+  let markdownIt = require('markdown-it')
 
-    eleventyConfig.setLibrary('md', markdownIt({
-      html: true,
-      breaks: true,
-      linkify: true,
-      typographer: true
-    }))
+  eleventyConfig.setLibrary('md', markdownIt({
+    html: true,
+    breaks: true,
+    linkify: true,
+    typographer: true
+  }))
 
-    // Netlify Redirect
-    eleventyConfig.addPassthroughCopy('_redirects')
+  // Netlify Redirect
+  eleventyConfig.addPassthroughCopy('_redirects')
 
-    return {
-      templateFormats: [
-        'md'
-      ],
-      dir: {
-        input: 'src',
-        data: '_data',
-        output: '_site'
-      },
-      templateFormats: ['njk', 'md', '11ty.js'],
-      htmlTemplateEngine: 'njk',
-      markdownTemplateEngine: 'njk',
-      passthroughFileCopy: true
-    }
+  // Web Fonts
+  eleventyConfig.addPassthroughCopy('src/fonts')
+
+  return {
+    dir: {
+      input: 'src',
+      data: '_data',
+      output: '_site'
+    },
+    templateFormats: ['njk', 'md', '11ty.js'],
+    htmlTemplateEngine: 'njk',
+    markdownTemplateEngine: 'njk',
+    passthroughFileCopy: true
+  }
 }

@@ -24,9 +24,7 @@ module.exports = eleventyConfig => {
       data: '_data',
       output: '_site'
     },
-    templateFormats: ['njk', 'md', '11ty.js'],
-    htmlTemplateEngine: 'njk',
-    markdownTemplateEngine: 'njk',
+    templateFormats: ['liquid', 'md', '11ty.js'],
     passthroughFileCopy: true
   }
 }

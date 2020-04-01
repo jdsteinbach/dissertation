@@ -15,6 +15,9 @@ module.exports = eleventyConfig => {
   // Web Fonts
   eleventyConfig.addPassthroughCopy('src/fonts')
 
+  //Favicon
+  eleventyConfig.addPassthroughCopy('src/favicon.ico')
+
   return {
     dir: {
       input: 'src',

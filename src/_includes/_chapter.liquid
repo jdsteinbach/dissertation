@@ -1,22 +1,22 @@
 <article class="chapter">
-  <h2 class="chapter__title">{{ chapter.title }}</h2>
+  <h2 class="chapter__title">{{ chapter.data.title }}</h2>
 
   <div class="chapter__outline">
     <h3 class="chapter__heading">Outline</h3>
-    {{ chapter.outline | safe }}
+    {{ chapter.data.outline.templateContent }}
   </div>
 
-  {% if chapter.introduction %}
+  {% if chapter.data.introduction %}
     <div class="chapter__introduction">
       <h3 class="chapter__subheading">Introduction</h3>
-      {{ chapter.introduction | safe }}
+      {{ chapter.data.introduction.templateContent | safe }}
     </div>
   {% endif %}
 
-  {% if chapter.conclusion %}
+  {% if chapter.data.conclusion %}
     <div class="chapter__conclusion">
       <h3 class="chapter__subheading">Conclusion</h3>
-      {{ chapter.conclusion | safe }}
+      {{ chapter.data.conclusion.templateContent | safe }}
     </div>
   {% endif %}
 </article>

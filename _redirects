@@ -1,3 +1,2 @@
 # Redirect default Netlify subdomain to primary domain
-https://gracious-yalow-58ebbc.netlify.com/* https://dissertation.jamessteinbach.com/:splat 301!
-https://jds-dissertation.netlify.app/* https://dissertation.jamessteinbach.com/:splat 301!
+/* https://dissertation.jamessteinbach.com/:splat 301!

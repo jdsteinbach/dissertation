@@ -22,7 +22,7 @@
     "@11ty/eleventy": "^0.10.0",
     "autoprefixer": "^9.7.4",
     "cssnano": "^4.1.10",
-    "markdown-it": "^10.0.0",
+    "markdown-it": "^12.3.2",
     "postcss": "^7.0.26",
     "postcss-image-inliner": "^3.0.9",
     "postcss-nested": "^4.2.1",

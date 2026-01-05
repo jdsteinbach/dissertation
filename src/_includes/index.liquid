@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="theme-color" content="#B8B8B8">
-    <title>{{ site.title }} | {{ site.subtitle }}</title>
-    <meta name="description" content="A summary of James Steinbach’s PhD Dissertation comparing honorifics in Pauline Christology with the Roman imperial cult.">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="favicon.ico">
-  </head>
-  <body>
-    <header id="masthead" class="header" role="banner">
-      <h1 class="header__title">{{ site.title }}</h1>
-      <p class="header__description">{{ site.subtitle }}</p>
-    </header>
 
-    <main class="main">
-      {% for chapter in collections.chapters %}
-        {% include _chapter %}
-      {% endfor %}
-      <hr>
-      {% for c in chapters %}
-        <!-- {% include _chapter %} -->
-      {% endfor %}
-    </main>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="theme-color" content="#B8B8B8">
+  <title>{{ site.title }} | {{ site.subtitle }}</title>
+  <meta name="description"
+    content="A summary of James Steinbach’s PhD Dissertation comparing honorifics in Pauline Christology with the Roman imperial cult.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="favicon.ico">
+</head>
 
-    <footer id="colophon" class="footer" role="contentinfo">
-      <div class="site-info">
-        Copyright © 2013-{{ site.year }}. All Rights Reserved.
-        <span class="sep"> | </span>
-        <a href="https://jamessteinbach.com/" title="Web Design by James Steinbach">Web Design by James Steinbach</a>
-      </div>
-    </footer>
-  </body>
+<body>
+  <header id="masthead" class="header" role="banner">
+    <h1 class="header__title">{{ site.title }}</h1>
+    <p class="header__description">{{ site.subtitle }}</p>
+  </header>
+
+  <main class="main">
+    {% for chapter in collections.chapters %}
+    {% include "_chapter" %}
+    {% endfor %}
+  </main>
+
+  <footer id="colophon" class="footer" role="contentinfo">
+    <div class="site-info">
+      Copyright © 2013&ndash;{{ site.year }}. All Rights Reserved.
+      <span class="sep"> | </span>
+      <a href="https://jamessteinbach.com/" title="Web Design by James Steinbach">Web Design by James Steinbach</a>
+    </div>
+  </footer>
+</body>
+
 </html>

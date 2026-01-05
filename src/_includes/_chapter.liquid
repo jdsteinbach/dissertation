@@ -7,16 +7,16 @@
   </div>
 
   {% if chapter.data.introduction %}
-    <div class="chapter__introduction">
-      <h3 class="chapter__subheading">Introduction</h3>
-      {{ chapter.data.introduction.templateContent | safe }}
-    </div>
+  <div class="chapter__introduction">
+    <h3 class="chapter__subheading">Introduction</h3>
+    {{ chapter.data.introduction.templateContent }}
+  </div>
   {% endif %}
 
   {% if chapter.data.conclusion %}
-    <div class="chapter__conclusion">
-      <h3 class="chapter__subheading">Conclusion</h3>
-      {{ chapter.data.conclusion.templateContent | safe }}
-    </div>
+  <div class="chapter__conclusion">
+    <h3 class="chapter__subheading">Conclusion</h3>
+    {{ chapter.data.conclusion.templateContent }}
+  </div>
   {% endif %}
 </article>
